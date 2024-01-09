@@ -3,7 +3,7 @@ module.exports = {
   version: 1,
   title: "InvokeAI",
   description: "Generative AI for Professional Creatives",
-  icon: "icon.png",
+  icon: "icon.jpeg",
   menu: async (kernel) => {
     let installing = kernel.running(__dirname, "install.json")
     let installed = await kernel.exists(__dirname, "app", "env")
