@@ -1,5 +1,6 @@
 const path = require("path")
 module.exports = {
+  version: 1,
   title: "InvokeAI",
   description: "Generative AI for Professional Creatives",
   icon: "icon.png",
