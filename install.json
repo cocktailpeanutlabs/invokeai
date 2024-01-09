@@ -1,5 +1,5 @@
 {
-  "pinokiod": ">=0.1.49",
+  "version": 1,
   "cmds": {
     "nvidia": "pip install \"InvokeAI[xformers]\" --use-pep517 --extra-index-url https://download.pytorch.org/whl/cu121",
     "amd": {
@@ -18,6 +18,19 @@
         "{{gpu === 'nvidia' ? self.cmds.nvidia : (platform === 'darwin' ? self.cmds.darwin : (gpu === 'amd' ? self.cmds[platform] : self.cmds.default))}}",
         "invokeai-configure --yes --root ."
       ]
+    }
+  }, {
+    "method": "fs.share",
+    "params": {
+      "drive": {
+        "models": "app/models",
+        "databases": "app/databases",
+        "autoimport": "app/autoimport",
+        "outputs": "app/outputs",
+        "nodes": "app/nodes",
+        "text-inversion-output": "app/text-inversion-output",
+        "text-inversion-training-data": "app/text-inversion-training-data"
+      }
     }
   }, {
     "method": "notify",
