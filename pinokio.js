@@ -1,6 +1,6 @@
 const path = require("path")
 module.exports = {
-  version: 1,
+  version: "1.1",
   title: "InvokeAI",
   description: "Generative AI for Professional Creatives",
   icon: "icon.jpeg",
@@ -35,7 +35,7 @@ module.exports = {
         }, {
           icon: "fa-solid fa-plug", text: "Reinstall", href: "install.json"
         }, {
-          icon: "fa-solid fa-broom", text: "Factory Reset", href: "reset.json"
+          icon: "fa-solid fa-circle-xmark", text: "Reset", href: "reset.json"
         }]
       }
     } else {
