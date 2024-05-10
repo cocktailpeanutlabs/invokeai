@@ -10,5 +10,10 @@
       "message": "git pull",
       "path": "app"
     }
+  }, {
+    "method": "script.start",
+    "params": {
+      "uri": "install.json"
+    }
   }]
 }
